@@ -7,6 +7,7 @@ import { VideoBackgroundButton } from '../../../../virtual-background';
 import { checkBlurSupport } from '../../../../virtual-background/functions';
 import { Avatar } from '../../../avatar';
 import { allowUrlSharing } from '../../functions';
+import { CustomButtons } from '../../../../custom-buttons';
 
 import ConnectionStatus from './ConnectionStatus';
 import CopyMeetingUrl from './CopyMeetingUrl';
@@ -116,6 +117,7 @@ export default class PreMeetingScreen extends PureComponent<Props> {
                         </>
                     )}
                     { this.props.children }
+                    <CustomButtons on_prejoin='true' />
                     <div className = 'media-btn-container'>
                         <div className = 'toolbox-content'>
                             <div className = 'toolbox-content-items'>

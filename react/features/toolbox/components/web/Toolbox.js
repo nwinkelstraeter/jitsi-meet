@@ -94,6 +94,7 @@ import ToggleCameraButton from './ToggleCameraButton';
 import ToolbarButton from './ToolbarButton';
 import VideoSettingsButton from './VideoSettingsButton';
 
+import { CustomButtons } from '../../../custom-buttons';
 
 /**
  * The type of the React {@code Component} props of {@link Toolbox}.
@@ -1294,6 +1295,7 @@ class Toolbox extends Component<Props> {
         return (
             <div className = { containerClassName }>
                 <div className = 'toolbox-content-wrapper'>
+                    <CustomButtons on_conference="true"/>
                     <div className = 'toolbox-content-items'>
                         { this._renderAudioButton() }
                         { this._renderVideoButton() }
